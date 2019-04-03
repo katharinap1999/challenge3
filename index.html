@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clock - Interface</title>
+  <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://algorithmia.com/v1/clients/js/algorithmia-0.2.0.js"></script>
+  <script src="assets/js/vendor/TweenMax.min.js"></script>
+  <script src="assets/js/main.js" defer="defer"></script>
+</head>
+<body>
+  <div class="container">
+
+
+    <div class="interface interface-challenge-03">
+      <!-- video-box -->
+      <div class="video-box">
+        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/XPJYO2kB0rk?controls=0&autoplay=1&modestbranding=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-overlay">
+          <div class="rec-info">
+            <span>REC</span>
+            <span class="rec-icon"></span>
+          </div>
+        </div>
+      </div>
+      <!-- /video-box -->
+
+      <!-- video-box 2 -->
+      <div class="video-box video-02">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ZL0tbOZYhE?controls=0&autoplay=1&modestbranding=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-overlay">
+          <div class="rec-info">
+            <span>REC</span>
+            <span class="rec-icon"></span>
+          </div>
+        </div>
+      </div>
+      <!-- /video-box 2 -->
+      
+      <div class="asteroid-box">
+        <div class="asteroids">
+          <div class="asteroid"></div>
+          <div class="asteroid"></div>
+          <div class="asteroid"></div>
+          <div class="asteroid"></div>
+        </div>
+        <div class="radar-line"></div>
+        <div class="world"></div>
+      </div> 
+
+      <div class="asteroid-data data">
+        <div class="frame"></div>
+        <ul class="list">
+          <li class="item-01">Entry 01</li>
+          <li class="item-02">Entry 02</li>
+          <li class="item-03">Entry 03</li>
+          <li class="item-04">Entry 04</li>
+        </ul>
+      </div> 
+
+      <div class="elevation-box">
+        <div class="rocket"></div>
+      </div>
+    
+      <div class="station-data data">
+        <div class="frame">
+        </div>
+        <ul class="list">
+          <li class="item-01">Entry 01</li>
+        </ul>
+      </div> 
+      <!-- /station-data -->
+
+      <!-- weather-box -->
+      <div class="weather-box">
+        <div class="weather-frame frame-corners">
+          <div class="frame-display">
+             <img src="assets/img/ch-03/weather-icons/10d.png" class="weather-icon">
+          </div>
+        </div>
+      </div>
+      <!-- /weather-box -->
+
+      <div class="weather-data data">
+        <div class="frame">
+        </div>
+        <ul class="list">
+          <li class="item-01">Entry 01</li>
+          <li class="item-02">Entry 02</li>
+          <li class="item-03">Entry 03</li>
+          <li class="item-04">Entry 04</li>
+          <li class="item-05">Entry 05</li>
+        </ul>
+      </div> 
+      <!-- /weather-data -->
+
+    </div>
+    <!-- /.interface -->
+
+  
+    <div class="interface interface-challenge-02">
+      <div class="wave-graph"></div>
+      <!-- clock-display -->
+      <div class="clock-display">
+      </div>
+      <!-- /clock-display -->
+
+      <!-- clock -->
+      <div class="clock-analog">
+        <div class="clock-bg"></div>
+        <div class="clock-inner">
+          <span class="hours-line"></span>
+          <span class="minutes-line"></span>
+          <span class="seconds-line"></span>
+          <span class="middle-point"></span>
+        </div>
+      </div>
+      <!-- /clock -->
+
+      <!-- city-view -->
+      <div class="city-view">
+        <div class="city-ruler"></div>
+        <div class="city-display">
+          <img src="assets/img/ch-02/city-vancouver.jpg" alt="Vancouver">
+          <span class="line"></span>
+        </div>
+      </div>
+      <!-- /city-view -->
+
+      <!-- world -->
+      <div class="world-map">
+        <span class="dots dot-01"></span>
+        <span class="dots dot-02"></span>
+        <span class="dots dot-03"></span>
+        <span class="scan-line"></span>
+      </div>
+      <!-- /world -->
+
+      <!-- weather-box-2 -->
+      <div class="weather-box-2">
+        <div class="weather-frame frame-corners">
+          <div class="frame-display">
+            <img src="assets/img/ch-02/weather_night.png" alt="night">
+          </div>
+        </div>
+      </div>
+      <!-- /weather-box-2 -->
+
+      <!-- astronaut-box -->
+      <div class="astronaut-box">
+        <div class="astronaut-frame frame-corners">
+          <div class="frame-display">
+             <img src="assets/img/ch-02/astronaut_kjell.jpg" alt="Kjell">
+          </div>
+        </div>
+      </div>
+      <!-- /astronaut-box -->
+
+      <!-- bars TBD -->
+      <div class="bars"></div>
+      <!-- /bars -->
+
+      <!-- lightlines TBD -->
+      <div class="lightlines"></div>
+      <!-- /lightlines -->
+
+      <!-- wave-graphic TBD -->
+      <div class="wave-graphic"></div>
+      <!-- /wave-graphic -->
+
+      <!-- circles_1 TBD -->
+      <div class="circles_1"></div>
+      <!-- /circles_1 -->
+
+      <!-- circles_2 TBD -->
+      <div class="circles_2"></div>
+      <!-- /circles_1 -->
+
+    </div>
+    <!-- /.interface -->
+
+    <!-- CONTROL ELEMENTS -->
+      <div class="controls controls-challenge-03">
+        <div class="control_power">
+          <button class="btn btn-round btn-gray btn-power">
+            <img src="assets/img/controls/power_small.png" alt="Power Icon">
+          </button>
+        </div>
+
+        <div class="control_bg control-left">
+          <button class="btn btn-round btn-gray btn-station-left">
+            <img src="assets/img/controls/left_small.png" alt="Left Icon">
+          </button>          
+        </div>
+
+        <div class="control_bg control-right">
+          <button class="btn btn-round btn-gray btn-station-right">
+            <img src="assets/img/controls/right_small.png" alt="Right Icon">
+          </button>          
+        </div>
+      </div>
+      <!-- /CONTROL ELEMENTS -->
+
+   <!-- CONTROL ELEMENTS -->
+    <div class="controls controls-challenge-02">
+     
+      <div class="control_bg control-left">
+        <button class="btn btn-round btn-gray btn-time-left">
+          <img src="assets/img/controls/left_small.png" alt="Left Icon">
+        </button>          
+      </div>
+
+      <div class="control_bg control-right">
+        <button class="btn btn-round btn-gray btn-time-right">
+          <img src="assets/img/controls/right_small.png" alt="Right Icon">
+        </button>          
+      </div>
+    </div>
+    <!-- /CONTROL ELEMENTS -->
+  </div>
+
+
+</body>
+</html>
